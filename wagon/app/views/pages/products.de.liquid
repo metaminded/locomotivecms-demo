@@ -1,0 +1,20 @@
+---
+title: Produkte
+slug: products
+handle: products
+listed: true
+published: true
+cache_strategy: none
+response_type: text/html
+position: 102
+---
+{% extends parent %}
+
+{% block 'main' %}
+  {% for product in contents.products %}
+    <div class="product">
+      <h2>{{ product.title }}</h2>
+      <p>{{ product.description }}</p>
+    </div>
+  {% endfor %}
+{% endblock %}

@@ -1,0 +1,29 @@
+---
+name: Products
+description: A description of the content type for the editors
+slug: products
+label_field_name: title
+order_by: manually
+order_direction: asc
+fields:
+- title:
+    label: Title
+    type: string
+    hint: A description of the field for the editors
+    required: true
+    unique: false
+    localized: true
+- description:
+    label: Description
+    type: text
+    hint: A description of the field for the editors
+    required: false
+    unique: false
+    localized: true
+- price:
+    label: Price
+    type: string
+    hint: A price
+    required: true
+    unique: false
+    localized: false

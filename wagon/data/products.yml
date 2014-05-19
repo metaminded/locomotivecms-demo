@@ -1,0 +1,20 @@
+---
+- Product 1:
+    _slug:
+      en: product-1
+      de: product-1
+    title:
+      de: Produkt 1
+    description:
+      en: Lorem Ipsum [EN]
+      de: Lorem Ipsum [DE]
+- Product 2:
+    _slug:
+      en: product-2
+      de: product-2
+    title:
+      de: Produkt 2
+    description:
+      en: Lorem Ipsum [EN]
+      de: Lorem Ipsum [DE]
+    price: '12'

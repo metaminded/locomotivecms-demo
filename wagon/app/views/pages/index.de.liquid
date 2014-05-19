@@ -1,0 +1,39 @@
+---
+title: Startseite
+handle: homepage
+listed: true
+published: true
+cache_strategy: none
+response_type: text/html
+position: 0
+editable_elements:
+  main/welcome_message: "<p>Willkommen</p>"
+---
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }} | {{ site.name }}</title>
+    {{ 'styles.css' | stylesheet_tag }}
+  </head>
+  <body>
+    {% locale_switcher %}
+
+    <hr>
+    {% link_to homepage %}
+    {% nav 'parent' %}
+    <hr>
+
+    <div id="content">
+      <h1>{{ page.title }}</h1>
+
+      {% block 'main' %}
+        <p>
+          {% editable_text "welcome_message" %}
+            Welcome to Acme, the world's favorite cartoon company.
+          {% endeditable_text %}
+        </p>
+      {% endblock %}
+    </div>
+  </body>
+</html>
